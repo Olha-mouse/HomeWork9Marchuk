@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+body {
+  font-family: "CeraPro";
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  width: 830px;
+  margin: 0 auto;
+}
+.menu-left {
+  display: flex;
+  float: left;
+  gap: 15px;
+}
+.menu-right {
+  display: flex;
+  float: right;
+  gap: 15px;
+}
+.green-underline {
+  color: green;
+  text-decoration: underline;
+  text-decoration-color: green;
+}
+.container {
+  width: 830px;
+  margin: 0 auto;
+  padding-top: 0px;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  height: 500px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 200px;
+  height: 200px;
+}
+.flex-item:nth-child(2) {
+  background-color: aqua;
+}
+
+.flex-wrapper {
+  margin-top: 100px;
+}
+.img-wrap {
+  position: relative;
+  padding: 25px 4px;
+  border-top: 1px solid transparent;
+  background: rgb(246, 245, 245);
+  cursor: pointer;
+  transition: 0, 5s;
+}
+.card-buttons {
+  width: 100%;
+  position: absolute;
+  bottom: 7px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  opacity: 0;
+  transition: 0, 5s;
+
+  button {
+    padding: 8px;
+    border-radius: 4px;
+  }
+}
+.price-green {
+  color: green;
+}
+.price-gray {
+  color: gray;
+  text-decoration: line-through;
+}
+.badge {
+  position: absolute;
+  background: green;
+  color: white;
+  margin: 5px;
+  padding: 6px 7px 8px 9px;
+  top: 14px;
+  left: 0;
+  opacity: 0;
+  transition: 0, 5s;
+}
+.img-wrap:hover {
+  border-top: 1px solid green;
+
+  .card-buttons {
+    opacity: 1;
+  }
+
+  .badge {
+    opacity: 1;
+  }
+}
